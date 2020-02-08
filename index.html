@@ -8,34 +8,36 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <input type="search" class="movies-search" placeholder="Search movie">
+  <div class="container">
+    <input type="search" class="search-input" placeholder="Search movie">
     <button class="search-button" type="button">Search</button>
     <ul class="movies-box">
       
     </ul>
-    <template id="movie-template">
-      <li class="movies__item movie">
-        <header class="movie__header">
-          <h3 class="movie__title">Lorem ipsum dolor sit.</h3>
-          <span class="movie__rating">9.9</span>
-        </header>
-        <div class="movie__meta">
-          <div class="movie__year">2019</div>
-          <div class="movie__genres">Action</div>
+  </div>
+  <template id="movie-template">
+    <li class="movies__item-movie">
+      <header class="movie__header">
+        <h3 class="movie__title">Lorem ipsum dolor sit.</h3>
+        <span class="movie__rating">9.9</span>
+      </header>
+      <div class="movie__meta">
+        <div class="movie__year">2019</div>
+        <div class="movie__genres">Action</div>
+      </div>
+      <footer class="movie__actions">
+        <a class="movie__trailer-link" href="https://youtube.com/watch?v=" target = "_blank">Watch trailer</a>
+        <button class="movie__summary-button" type="button">Read summary</button>
+        <button class="movie__bookmark-button" type="button">Add to watchlist</button>
+      </footer>
+      <div class="modal">
+        <div class="modal__content">
+          <button class="close-button" type="button">X</button>
+          <div class="modal__content-text"></div>
         </div>
-        <footer class="movie__actions">
-          <a class="movie__trailer-link" href="https://youtube.com/watch?v=">Watch trailer</a>
-          <button class="movie__summary-button" type="button">Read summary</button>
-          <button class="movie__bookmark-button" type="button">Add to watchlist</button>
-        </footer>
-        <div class="modal">
-          <div class="modal__content">
-            <button class="close-button" type="button">X</button>
-            <div class="modal__content-text"></div>
-          </div>
-        </div>
-      </li>
-    </template>
+      </div>
+    </li>
+  </template>
   <script src="js/movies.js"></script>
   <script src="js/main.js"></script>
 </body>
